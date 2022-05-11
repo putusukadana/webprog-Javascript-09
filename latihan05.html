@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan javascript 05</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h3>konversi suhu </h3>
+
+        <div class="form-grup">
+            <label for="DC"> derajat Celcuius </label>
+            <input type="text" id="DC" class="form-control">
+        </div>
+        <div class="form-gruop">
+            <label for="DF"> Derajat Farenhaite</label>
+            <input type="text" id="DF" class="form-control">
+        </div>
+        <div class="form-gruop">
+            <label for="DR"> Derajat reamure</label>
+            <input type="text" id="DR" class="form-control">
+        </div>
+        <div class="form-gruop">
+            <label for="DK"> Derajat KELVIN</label>
+            <input type="text" id="DK" class="form-control">
+        </div>
+        <div class="form-group">
+            <button onclick="konversi()" class="btn btn-primary">Konversi</button>
+        </div>
+    </div>
+    <script>
+        function konversi(){
+            let Celx = document.getElementById("DC").value
+            let hsl = 9/5 * Celx +32
+            document.getElementById("DF").value=hsl
+            let hsl1 = 5/4* Celx
+            document.getElementById("DR").value=hsl1
+            let hsl2 = Celx + 273.15
+            document.getElementById("DK").value=hsl2
+        }
+    </script>
+</body>
+</html>

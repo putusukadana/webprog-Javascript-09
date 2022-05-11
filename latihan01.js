@@ -1,0 +1,1 @@
+document.write("<br>menggunakn file terpisah (external)")

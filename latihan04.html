@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan javascript 04</title>
+</head>
+<body>
+    belajar javascript di kls webprog <span id="kls"></span>
+    <!-- triger -->
+    <br>
+    NAMA<br>
+    <input type="text" id="txNAMA">
+    <br>
+<button onclick="kls()">test</button> 
+<hr>
+NIM <input type="text" id="txNIM"><br>
+<button onclick="chekNIM()">chek NIM</button>
+
+<div id="hasil"></div>
+
+    <script>
+        function kls(){
+            document.getElementById("kls").innerHTML=" Kelas B" //menyisipkan kata
+            document.getElementById("txNAMA").value= "nyoman" //memberi nilai 
+        }
+
+        function chekNIM (){
+            let hsl=document.getElementById("txNIM").value //mengembil nilai 
+            // alert(hsl)
+            document.getElementById("hasil").innerHTML="hasil pembacaan dari isi text box NIM adalah"+hsl
+            console.log("isi:"+hsl)//melakukan debuging untuk pengecekan awal
+        }
+    </script>
+
+</body>
+</html>
